@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--这里的namespace 是映射到接口,里面的方法要和下面的方法id一样。-->
+<mapper namespace="DAL.IRoomMapper">
+    <!--单表查询-->
+    <select id="selectAllRoom" resultType="Room">
+        select * from Room;
+    </select>
+    <select id="selectAllCustomer" resultType="Customer">
+        select * from Customer;
+    </select>
+    <select id="selectAllAdministrators" resultType="Administrators">
+        select * from Administrators;
+    </select>
+
+    <!--1对1 查询 顾客与房间-->
+    <select id="selectAllCustomerAndRoom" resultMap="AllCustomerAndRoomMap">
+        select * from Customer as c join Room as r on c.rid=r.rid;
+    </select>
+    <!--1对1 查询 顾客与房间 加条件 c.cid-->
+    <select id="selectCustomerAndRoomByCid" resultMap="AllCustomerAndRoomMap">
+        select * from Customer as c join Room as r on c.rid=r.rid
+        <where>
+            <if test="customerid!=null and customerid gt 0">
+                c.cid=#{customerid}
+            </if>
+        </where>
+    </select>
+    <resultMap id="AllCustomerAndRoomMap" type="Customer">
+        <id column="cid" property="cid"></id>
+        <result column="cname" property="cname"></result>
+        <result column="csex" property="csex"></result>
+        <result column="cphone" property="cphone"></result>
+        <result column="ccard" property="ccard"></result>
+        <result column="rid" property="rid"></result>
+        <association property="room" javaType="Room">
+            <id column="rid" property="rid"></id>
+            <result column="rname" property="rname"></result>
+        </association>
+    </resultMap>
+
+    <!--一对多查询-->
+    <select id="selectAllRelationship" resultMap="selectAllRelationshipMap">
+--         select * from Relationship as rela join Administrators as a on rela.aid=a.aid join
+--         Room as r on rela.rid=r.rid
+            select * from Relationship as rela join Administrators as a on rela.aid=a.aid join
+            Room as r on rela.rid=r.rid join Dept as d on a.deptid=d.deptid
+    </select>
+    <!--一对多查询加条件-->
+    <select id="selectAllRelationshipByAid" resultMap="selectAllRelationshipMap">
+        select * from Relationship as rela join Administrators as a on rela.aid=a.aid join
+        Room as r on rela.rid=r.rid join Dept as d on a.deptid=d.deptid
+        <where>
+            <if test="aid!=null and aid gt 0">
+                a.aid=#{aid}
+            </if>
+        </where>
+    </select>
+
+    <!--1对多的集合-->
+    <resultMap id="selectAllRelationshipMap" type="Relationship">
+        <id column="relationid" property="relationid"></id>
+        <result column="aid" property="aid"></result>
+        <result column="rid" property="rid"></result>
+        <!--查询出全部Room的集合-->
+        <collection property="roomList" ofType="Room">
+            <id column="rid" property="rid"></id>
+            <result column="rname" property="rname"></result>
+            <result column="rbednumber" property="rbednumber"></result>
+            <result column="rprice" property="rprice"></result>
+            <!--不查询tid了-->
+            <result column="tid" property="tid"></result>
+        </collection>
+        <!--查询出全部Adminstrartor的集合-->
+        <collection property="administratorsList" ofType="Administrators">
+            <id column="aid" property="aid"></id>
+            <result column="aname" property="aname"></result>
+            <result column="asex" property="asex"></result>
+            <result column="apassword" property="apassword"></result>
+            <!--不查询deptid了-->
+            <result column="deptid" property="deptid"></result>
+            <!--集合里面关联单个表。。，简单操作-->
+            <association property="dept" javaType="Dept">
+                <id property="deptid" column="deptid"></id>
+                <result property="deptname" column="deptname"></result>
+            </association>
+        </collection>
+    </resultMap>
+
+    <!--多对多查询 查询多个房间被多个管理员管理-->
+    <select id="selectAllRelationshipMoreAndMore" resultMap="selectAllRelationshipMoreAndMoreMap">
+        select * from Relationship as rela join Room as r on rela.rid=r.rid join Administrators as a
+        on rela.aid=a.aid join Dept as dept on a.deptid=dept.deptid where r.rid in
+        (select r.rid from Relationship as rela join Room as r on rela.rid=r.rid join
+        Administrators as a on rela.aid=a.aid group by r.rid having count(rela.aid)>1) order by rela.aid
+    </select>
+    <resultMap id="selectAllRelationshipMoreAndMoreMap" type="Relationship">
+        <id column="relationid" property="relationid"></id>
+        <result column="aid" property="aid"></result>
+        <result column="rid" property="rid"></result>
+        <collection property="roomList" ofType="Room">
+            <id column="rid" property="rid"></id>
+            <result column="rname" property="rname"></result>
+            <result column="rbednumber" property="rbednumber"></result>
+            <result column="rprice" property="rprice"></result>
+            <!--不查询tid了-->
+            <result column="tid" property="tid"></result>
+        </collection>
+        <collection property="administratorsList" ofType="Administrators">
+            <id column="aid" property="aid"></id>
+            <result column="aname" property="aname"></result>
+            <result column="asex" property="asex"></result>
+            <result column="apassword" property="apassword"></result>
+            <!--不查询deptid了-->
+            <result column="deptid" property="deptid"></result>
+            <!--集合里面关联单个表。。，简单操作-->
+            <association property="dept" javaType="Dept">
+                <id property="deptid" column="deptid"></id>
+                <result property="deptname" column="deptname"></result>
+            </association>
+        </collection>
+
+    </resultMap>
+</mapper>
