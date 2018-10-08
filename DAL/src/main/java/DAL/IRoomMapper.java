@@ -1,9 +1,6 @@
 package DAL;
 
-import Entity.Administrators;
-import Entity.Customer;
-import Entity.Relationship;
-import Entity.Room;
+import Entity.*;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -29,4 +26,9 @@ public interface IRoomMapper {
 
     /*多对多*/
     List<Relationship> selectAllRelationshipMoreAndMore();
+
+    /*修改*/
+    int updateRoomByrid(Room room);
+
+    int updateRoomTypeBytid(RoomType roomType);
 }

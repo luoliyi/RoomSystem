@@ -16,6 +16,34 @@
         select * from Administrators;
     </select>
 
+    <!--修改-->
+    <update id="updateRoomByrid" parameterType="Room">
+        update Room
+        <set>
+            <if test="rname!=null and rname!=''">
+                rname=#{rname},
+            </if>
+            <if test="rbednumber!=null and rbednumber gt 0">
+                rbednumber=#{rbednumber},
+            </if>
+            <if test="rprice!=null and rprice gt 0">
+                rprice=#{rprice},
+            </if>
+        </set>
+        where rid=#{rid}
+    </update>
+
+    <!--修改2-->
+    <update id="updateRoomTypeBytid" parameterType="RoomType">
+        update RoomType
+        <set>
+            <if test="tname!=null and tname!=''">
+                tname=#{tname}
+            </if>
+        </set>
+        where tid=#{tid}
+    </update>
+
     <!--1对1 查询 顾客与房间-->
     <select id="selectAllCustomerAndRoom" resultMap="AllCustomerAndRoomMap">
         select * from Customer as c join Room as r on c.rid=r.rid;
@@ -96,7 +124,9 @@
         Administrators as a on rela.aid=a.aid group by r.rid having count(rela.aid)>1) order by rela.aid
     </select>
     <resultMap id="selectAllRelationshipMoreAndMoreMap" type="Relationship">
+        <!--用id来映射主键-->
         <id column="relationid" property="relationid"></id>
+        <!--column是指数据库中的字段 property是指实体类中的字段-->
         <result column="aid" property="aid"></result>
         <result column="rid" property="rid"></result>
         <collection property="roomList" ofType="Room">

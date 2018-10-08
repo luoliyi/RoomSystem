@@ -1,9 +1,6 @@
 package DAL;
 
-import Entity.Administrators;
-import Entity.Customer;
-import Entity.Relationship;
-import Entity.Room;
+import Entity.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -82,5 +79,27 @@ public class IRoomMapperTest {
         for (Relationship relationship:relationshipList){
             System.out.println(relationship.toString());
         }
+    }
+
+
+    //修改
+    @Test
+    public void updateRoomByrid(){
+        Room room=new Room();
+        room.setRid(1);
+        room.setRname("单人间min2");
+        room.setRbednumber(2);
+        //room.setRprice(202);
+        int t=dal.updateRoomByrid(room);
+        System.out.println(t);
+    }
+
+
+    //修改
+    @Test
+    public void updateRoomTypeBytid(){
+        RoomType roomType=new RoomType(2,"多人间");
+        int result=dal.updateRoomTypeBytid(roomType);
+        System.out.println(result);
     }
 }

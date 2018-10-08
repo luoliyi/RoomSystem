@@ -1,9 +1,6 @@
 package DAL;
 
-import Entity.Administrators;
-import Entity.Customer;
-import Entity.Relationship;
-import Entity.Room;
+import Entity.*;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -52,5 +49,17 @@ public class RoomDAL implements IRoomMapper {
 
     public List<Relationship> selectAllRelationshipMoreAndMore() {
         return mapper.selectAllRelationshipMoreAndMore();
+    }
+
+    public int updateRoomByrid(Room room) {
+        int result= mapper.updateRoomByrid(room);
+        session.commit();
+        return  result;
+    }
+
+    public int updateRoomTypeBytid(RoomType roomType) {
+        int result= mapper.updateRoomTypeBytid(roomType);
+         session.commit();
+         return  result;
     }
 }
