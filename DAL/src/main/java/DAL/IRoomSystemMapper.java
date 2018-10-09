@@ -5,13 +5,15 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface IRoomMapper {
+public interface IRoomSystemMapper {
 
     /*单表*/
-    List<Room>selectAllRoom();
+    List<Room> selectAllRoom();
     List<Customer>selectAllCustomer();
     List<Administrators>selectAllAdministrators();
 
+    /*查询单个房间*/
+    Room selectRoomByrid(@Param("rid")int rid);
     /*1对1*/
     List<Customer> selectAllCustomerAndRoom();
 

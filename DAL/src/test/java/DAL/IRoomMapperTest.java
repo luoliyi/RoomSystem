@@ -1,6 +1,7 @@
 package DAL;
 
 import Entity.*;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -101,5 +102,32 @@ public class IRoomMapperTest {
         RoomType roomType=new RoomType(2,"多人间");
         int result=dal.updateRoomTypeBytid(roomType);
         System.out.println(result);
+    }
+
+    /*choose*/
+    @Test
+    public void selectRoomBynameOrBypriceOrByrid(){
+        List<Room> roomList=dal.selectRoomBynameOrBypriceOrByrid("钟",200,1);
+        for (Room room:roomList){
+            System.out.println(room.toString());
+        }
+    }
+
+    //trim
+    @Test
+    public void selectAllRoomWithTrim(){
+        List<Room> roomList=dal.selectAllRoomWithTrim("单");
+        for (Room room:roomList){
+            System.out.println(room.toString());
+        }
+    }
+
+    //activeInsertRoom
+    @Test
+    public void activeInsertRoom(){
+        Room room=new Room("总统套房2",0,800,3);
+        int result=dal.activeInsertRoom(room);
+        System.out.println(result);
+        Assert.assertEquals(1,result);
     }
 }

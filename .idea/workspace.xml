@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13c0b54f-f374-488c-a0e7-a7faa4703b5c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomSystemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAL/src/main/java/DAL/RoomSystemMapperDAL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAL/src/main/java/MyBatisUtils/MyBatisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAL/src/main/resources/mapper/IRoomSystemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAL/src/test/java/DAL/RoomSystemMapperDALTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAL/src/main/java/DAL/RoomDAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/src/main/java/DAL/RoomDAL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAL/src/main/resources/mapper/RoomMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/src/main/resources/mapper/RoomMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/src/main/resources/mybatisconf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/src/main/resources/mybatisconf.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAL/src/test/java/DAL/IRoomMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/src/test/java/DAL/IRoomMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/target/classes/DAL/IRoomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/target/classes/DAL/IRoomMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/target/classes/DAL/RoomDAL.class" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/target/classes/DAL/RoomDAL.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAL/target/classes/mapper/RoomMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/target/classes/mapper/RoomMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/target/classes/mybatisconf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/target/classes/mybatisconf.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DAL/target/test-classes/DAL/IRoomMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/target/test-classes/DAL/IRoomMapperTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,20 +32,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoomMapper.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/mapper/RoomMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IRoomMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomMapper.java">
+      <file leaf-file-name="IRoomSystemMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/mapper/IRoomSystemMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="259">
-              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoomSystemMapperDAL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/RoomSystemMapperDAL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="31" />
+              <folding>
+                <element signature="e#235#236#0" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#519#520#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#794#795#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#920#921#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#1040#1041#0" expanded="true" />
+                <element signature="e#1067#1068#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1155#1156#0" expanded="true" />
+                <element signature="e#1201#1202#0" expanded="true" />
+                <element signature="e#1225#1226#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IRoomSystemMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomSystemMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,36 +88,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Relationship.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Entity/src/main/java/Entity/Relationship.java">
+      <file leaf-file-name="RoomSystemMapperDALTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DAL/src/test/java/DAL/RoomSystemMapperDALTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoomDAL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/RoomDAL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
+              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1305#1306#0" expanded="true" />
-                <element signature="e#1359#1360#0" expanded="true" />
-                <element signature="e#1558#1559#0" expanded="true" />
-                <element signature="e#1622#1623#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IRoomMapperTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAL/src/test/java/DAL/IRoomMapperTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -84,6 +107,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
         <option value="JUnit4 Test Class" />
       </list>
@@ -99,15 +123,22 @@
         <option value="$PROJECT_DIR$/Entity/src/main/java/Entity/Dept.java" />
         <option value="$PROJECT_DIR$/DAL/pom.xml" />
         <option value="$PROJECT_DIR$/DAL/src/main/resources/dbconfig.properties" />
-        <option value="$PROJECT_DIR$/DAL/src/main/resources/mybatisconf.xml" />
         <option value="$PROJECT_DIR$/Entity/src/main/java/Entity/Room.java" />
         <option value="$PROJECT_DIR$/Entity/src/main/java/Entity/Relationship.java" />
         <option value="$PROJECT_DIR$/Entity/src/main/java/Entity/Customer.java" />
         <option value="$PROJECT_DIR$/Entity/src/main/java/Entity/Administrators.java" />
-        <option value="$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomMapper.java" />
         <option value="$PROJECT_DIR$/DAL/src/main/java/DAL/RoomDAL.java" />
-        <option value="$PROJECT_DIR$/DAL/src/main/resources/mapper/RoomMapper.xml" />
         <option value="$PROJECT_DIR$/DAL/src/test/java/DAL/IRoomMapperTest.java" />
+        <option value="$PROJECT_DIR$/DAL/src/main/resources/mapper/RoomMapper.xml" />
+        <option value="$PROJECT_DIR$/DAL/src/main/resources/mapper/IRoomSystemMapper.xml.fxml" />
+        <option value="$PROJECT_DIR$/DAL/src/main/resources/mapper/IRoomSystemMapper.xml.xml" />
+        <option value="$PROJECT_DIR$/DAL/src/main/resources/mybatisconf.xml" />
+        <option value="$PROJECT_DIR$/DAL/src/main/java/MyBatisUtils/MyBatisUtil.java" />
+        <option value="$PROJECT_DIR$/DAL/src/main/resources/mapper/IRoomSystemMapper.xml" />
+        <option value="$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomSystemMapper.java" />
+        <option value="$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomMapper.java" />
+        <option value="$PROJECT_DIR$/DAL/src/main/java/DAL/RoomSystemMapperDAL.java" />
+        <option value="$PROJECT_DIR$/DAL/src/test/java/DAL/RoomSystemMapperDALTest.java" />
       </list>
     </option>
   </component>
@@ -140,7 +171,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,10 +178,46 @@
               <item name="RoomSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="RoomSystem" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RoomSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RoomSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="DAL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RoomSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RoomSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="DAL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RoomSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RoomSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="DAL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RoomSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RoomSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="DAL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RoomSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RoomSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="DAL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="DAL" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,55 +257,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IRoomMapperTest.updateRoomByrid">
+  <component name="RunManager" selected="JUnit.RoomSystemMapperDALTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="IRoomMapperTest.selectAllCustomerAndRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DAL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DAL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="DAL" />
-      <option name="MAIN_CLASS_NAME" value="DAL.IRoomMapperTest" />
-      <option name="METHOD_NAME" value="selectAllCustomerAndRoom" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="IRoomMapperTest.selectAllRelationshipByAid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DAL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DAL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="DAL" />
-      <option name="MAIN_CLASS_NAME" value="DAL.IRoomMapperTest" />
-      <option name="METHOD_NAME" value="selectAllRelationshipByAid" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="IRoomMapperTest.selectAllRelationshipMoreAndMore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAL" />
@@ -287,7 +307,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="IRoomMapperTest.updateRoomTypeBytid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoomSystemMapperDALTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAL" />
       <extension name="coverage">
         <pattern>
@@ -298,8 +318,54 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="DAL" />
-      <option name="MAIN_CLASS_NAME" value="DAL.IRoomMapperTest" />
-      <option name="METHOD_NAME" value="updateRoomTypeBytid" />
+      <option name="MAIN_CLASS_NAME" value="DAL.RoomSystemMapperDALTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RoomSystemMapperDALTest.selectAllRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DAL.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="DAL" />
+      <option name="MAIN_CLASS_NAME" value="DAL.RoomSystemMapperDALTest" />
+      <option name="METHOD_NAME" value="selectAllRoom" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RoomSystemMapperDALTest.selectRoomByrid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DAL.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="DAL" />
+      <option name="MAIN_CLASS_NAME" value="DAL.RoomSystemMapperDALTest" />
+      <option name="METHOD_NAME" value="selectRoomByrid" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -349,19 +415,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.IRoomMapperTest.selectAllRelationshipByAid" />
-      <item itemvalue="JUnit.IRoomMapperTest.selectAllRelationshipMoreAndMore" />
-      <item itemvalue="JUnit.IRoomMapperTest.selectAllCustomerAndRoom" />
       <item itemvalue="JUnit.IRoomMapperTest.updateRoomByrid" />
-      <item itemvalue="JUnit.IRoomMapperTest.updateRoomTypeBytid" />
+      <item itemvalue="JUnit.IRoomMapperTest.selectAllRelationshipMoreAndMore" />
+      <item itemvalue="JUnit.RoomSystemMapperDALTest.selectAllRoom" />
+      <item itemvalue="JUnit.RoomSystemMapperDALTest.selectRoomByrid" />
+      <item itemvalue="JUnit.RoomSystemMapperDALTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IRoomMapperTest.updateRoomByrid" />
-        <item itemvalue="JUnit.IRoomMapperTest.updateRoomTypeBytid" />
+        <item itemvalue="JUnit.RoomSystemMapperDALTest" />
+        <item itemvalue="JUnit.RoomSystemMapperDALTest.selectRoomByrid" />
+        <item itemvalue="JUnit.RoomSystemMapperDALTest.selectAllRoom" />
         <item itemvalue="JUnit.IRoomMapperTest.selectAllRelationshipMoreAndMore" />
-        <item itemvalue="JUnit.IRoomMapperTest.selectAllCustomerAndRoom" />
-        <item itemvalue="JUnit.IRoomMapperTest.selectAllRelationshipByAid" />
+        <item itemvalue="JUnit.IRoomMapperTest.updateRoomByrid" />
       </list>
     </recent_temporary>
   </component>
@@ -379,44 +445,53 @@
       <workItem from="1538703510832" duration="5685000" />
       <workItem from="1538751501529" duration="777000" />
       <workItem from="1538957371664" duration="652000" />
-      <workItem from="1538959448584" duration="4778000" />
+      <workItem from="1538959448584" duration="11671000" />
+      <workItem from="1539044641194" duration="4589000" />
     </task>
+    <task id="LOCAL-00001" summary="增加了修改功能。">
+      <created>1538969782201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538969782202</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.08 at 11h 27m 12s.xml">
+    <history-entry file="IRoomMapperTest_activeInsertRoom - 2018.10.08 at 16h 17m 15s.xml">
+      <configuration name="IRoomMapperTest.activeInsertRoom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IRoomMapperTest_activeInsertRoom - 2018.10.08 at 16h 18m 02s.xml">
+      <configuration name="IRoomMapperTest.activeInsertRoom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IRoomMapperTest_activeInsertRoom - 2018.10.08 at 16h 19m 18s.xml">
+      <configuration name="IRoomMapperTest.activeInsertRoom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IRoomMapperTest_selectAllRoomWithTrim - 2018.10.08 at 17h 19m 47s.xml">
+      <configuration name="IRoomMapperTest.selectAllRoomWithTrim" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IRoomMapperTest_activeInsertRoom - 2018.10.09 at 08h 26m 14s.xml">
+      <configuration name="IRoomMapperTest.activeInsertRoom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IRoomMapperTest_updateRoomTypeBytid - 2018.10.09 at 08h 27m 00s.xml">
+      <configuration name="IRoomMapperTest.updateRoomTypeBytid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IRoomMapperTest_selectRoomBynameOrBypriceOrByrid - 2018.10.09 at 08h 27m 08s.xml">
+      <configuration name="IRoomMapperTest.selectRoomBynameOrBypriceOrByrid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.09 at 08h 27m 25s.xml">
       <configuration name="IRoomMapperTest.updateRoomByrid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.08 at 11h 27m 55s.xml">
-      <configuration name="IRoomMapperTest.updateRoomByrid" configurationId="JUnit" />
+    <history-entry file="IRoomMapperTest_selectAllRelationshipMoreAndMore - 2018.10.09 at 08h 27m 41s.xml">
+      <configuration name="IRoomMapperTest.selectAllRelationshipMoreAndMore" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.08 at 11h 28m 46s.xml">
-      <configuration name="IRoomMapperTest.updateRoomByrid" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.08 at 11h 29m 49s.xml">
-      <configuration name="IRoomMapperTest.updateRoomByrid" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.08 at 11h 30m 18s.xml">
-      <configuration name="IRoomMapperTest.updateRoomByrid" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.08 at 11h 31m 06s.xml">
-      <configuration name="IRoomMapperTest.updateRoomByrid" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.08 at 11h 31m 19s.xml">
-      <configuration name="IRoomMapperTest.updateRoomByrid" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.08 at 11h 31m 51s.xml">
-      <configuration name="IRoomMapperTest.updateRoomByrid" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.08 at 11h 32m 16s.xml">
-      <configuration name="IRoomMapperTest.updateRoomByrid" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IRoomMapperTest_updateRoomByrid - 2018.10.08 at 11h 33m 06s.xml">
-      <configuration name="IRoomMapperTest.updateRoomByrid" configurationId="JUnit" />
+    <history-entry file="RoomSystemMapperDALTest_selectAllRoom - 2018.10.09 at 10h 48m 57s.xml">
+      <configuration name="RoomSystemMapperDALTest.selectAllRoom" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20863000" />
+    <option name="totallyTimeSpent" value="32345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -432,11 +507,11 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3275862" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3275862" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1830161" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18594436" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -458,12 +533,44 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加了修改功能。" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了修改功能。" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/mapper/RoomMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3800">
+          <caret line="190" column="17" lean-forward="true" selection-start-line="190" selection-start-column="17" selection-end-line="190" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/RoomDAL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1480">
+          <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/test/java/DAL/IRoomMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="120" column="48" lean-forward="true" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/mapper/RoomMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -475,9 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -492,13 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1622#1623#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -520,9 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,13 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1622#1623#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,9 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,13 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1622#1623#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -624,13 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1622#1623#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,9 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,13 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/mybatisconf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Entity/src/main/java/Entity/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -738,41 +798,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/RoomDAL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1622#1623#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DAL/src/test/java/DAL/IRoomMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        <state relative-caret-position="299">
+          <caret line="125" column="9" lean-forward="true" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/mybatisconf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/mapper/RoomMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="-20">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/RoomDAL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/MyBatisUtils/MyBatisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/resources/mapper/IRoomSystemMapper.xml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/IRoomSystemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/main/java/DAL/RoomSystemMapperDAL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAL/src/test/java/DAL/RoomSystemMapperDALTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

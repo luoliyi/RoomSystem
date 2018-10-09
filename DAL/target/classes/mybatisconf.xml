@@ -52,5 +52,6 @@ mybatis会自动扫描包中的pojo类，自动定义别名，别名就是类名
     <mappers>
         <!--映射-->
         <mapper resource="mapper/RoomMapper.xml"></mapper>
+        <mapper resource="mapper/IRoomSystemMapper.xml"></mapper>
     </mappers>
 </configuration>

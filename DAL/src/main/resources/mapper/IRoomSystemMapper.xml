@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!--这里的namespace 是映射到接口,里面的方法要和下面的方法id一样。-->
-<mapper namespace="DAL.IRoomMapper">
+<mapper namespace="DAL.IRoomSystemMapper">
     <!--单表查询-->
     <select id="selectAllRoom" resultType="Room">
         select * from Room;
@@ -14,6 +14,11 @@
     </select>
     <select id="selectAllAdministrators" resultType="Administrators">
         select * from Administrators;
+    </select>
+
+    <!--查询单个房间-->
+    <select id="selectRoomByrid" resultType="Room">
+        select <include refid="xing"></include> from Room where rid=#{rid}
     </select>
 
     <!--修改2-->
@@ -174,7 +179,7 @@
         /*prefix:前缀*/
         <trim prefix="where" prefixOverrides="and | or">
             <if test="rname!=null and rname!=''">
-               and rname like  concat(concat('%',#{rname}),'%');
+                and rname like  concat(concat('%',#{rname}),'%');
             </if>
         </trim>
     </select>

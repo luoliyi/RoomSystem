@@ -62,4 +62,18 @@ public class RoomDAL implements IRoomMapper {
          session.commit();
          return  result;
     }
+
+    public List<Room> selectRoomBynameOrBypriceOrByrid(String rname, double rprice, int rid) {
+        return  mapper.selectRoomBynameOrBypriceOrByrid(rname,rprice,rid);
+    }
+
+    public List<Room> selectAllRoomWithTrim(String rname) {
+        return mapper.selectAllRoomWithTrim(rname);
+    }
+
+    public int activeInsertRoom(Room room) {
+        int result= mapper.activeInsertRoom(room);
+        session.commit();
+        return  result;
+    }
 }
